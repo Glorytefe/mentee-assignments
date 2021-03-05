@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500;700&display=swap");
+:root {
+  --btn-col: linear-gradient(to right, #ffb000, #ff1f00);
+  --font-col1: #ffff;
+  --font-colblue: #0b375c;
+  --font-colyel: #ffb000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: mukta, sans-serif;
+}
+button,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+.top {
+  background: url("../img/image1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+}
+
+/* content starts */
+.content {
+  padding: 100px 80px;
+}
+.h-text1 {
+  max-width: 700px;
+}
+.h-text1 h4 {
+  color: var(--font-colyel);
+  font-weight: bolder;
+  font-size: 20px;
+}
+.h-text1 h2 {
+  color: var(--font-col1);
+  font-size: 80px;
+  line-height: 100px;
+}
+
+
+.title {
+  color: var(--font-colblue);
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn-buy {
+  background: var(--btn-col);
+  padding: 12px 8px;
+  width: 120px;
+  outline: none;
+  border: none;
+  color: var(--font-col1);
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* ...ends here */
+/* meal start here */
+.meal {
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.meal h3 {
+  color: var(--font-colblue);
+  font-size: 20px;
+  padding: 20px 0px;
+}
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  text-align: center;
+}
+
+.btn-bu {
+  background: var(--btn-col);
+  padding: 8px;
+  width: 150px;
+  outline: none;
+  border: none;
+  color: var(--font-col1);
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+
+.carts {
+  width: 20px;
+}
+
+.grid-cont p {
+  padding: 5px 0;
+}
+
+.yellow {
+  padding: 10px 50px;
+  margin: 80px auto;
+}
+.txt2 {
+  background: url("../img/yellbk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 40px;
+  color: var(--font-col1);
+  max-width: 1300px;
+  width: 100%;
+  text-align: center;
+}
+.txt2 p {
+  padding: 0 150px;
+  font-size: 20px;
+}
+.load {
+  height: 50px;
+  width: 150px;
+}
+.order {
+  width: 150px;
+  height: 50px;
+  padding: 8px 12px;
+  background: var(--font-colblue);
+  outline: none;
+  border: none;
+  color: var(--font-col1);
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 40px 0 0 0;
+}
+.m-grid {
+  box-shadow: 0 5px 8px 10px rgba(202, 198, 198, 0.3);
+  max-width: 400px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+.grid-cont {
+  padding: 20px;
+}
+.pizza {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.pizza:hover,
+button:hover {
+  transition: 0.5s ease-in;
+  transform: scaleX(1.04);
+  box-shadow: 0 5px 8px 10px rgba(202, 198, 198, 0.3);
+}
+
+@media (max-width: 1000px) {
+  .top {
+    padding: 20px 10px;
+  }
+  .h-text1 h2{
+    font-size: 30px;
+    padding: 20px 0;
+    line-height: unset;
+
+  }
+  .h-text1{
+    padding: 20px 0;
+    max-width: 200px;
+  }
+  .content {
+    padding: 10px;
+  }
+  .meal {
+    width: 90%;
+  }
+
+  .txt2 p {
+    padding: 0;
+  }
+ 
+  .txt2 {
+    padding: 50px 10px;
+  }
+  .txt{
+    display: block;
+    padding: 0 20px;
+  }
+  .yellow{
+    padding: 10px;
+  }
+  .txt,
+  .m-grid {
+    text-align: center;
+  }
+ 
+}
+@media(max-width: 320px){
+  .meal-grid{
+    display: block;
+  }
+}
