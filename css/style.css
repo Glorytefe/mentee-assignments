@@ -1,0 +1,16 @@
+ body{
+     margin: 0;
+ }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+button{
+    width: 80px;
+    padding: 10px 0;
+    cursor: pointer;
+}
