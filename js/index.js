@@ -50,7 +50,7 @@ setInterval(changeImg, 3000);
 function changeImg (){
  if(i<imageArray.length){
 // let i = Math.floor(Math.random() * imageArray.length);
-     container.setAttribute('src', `img/${imageArray[i]}`)
+     container.setAttribute('src', `./img/${imageArray[i]}`)
 i++
  }
  else{
