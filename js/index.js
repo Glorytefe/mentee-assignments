@@ -3,7 +3,9 @@ let timeHolder = document.getElementById('tm');
 let dateHolder = document.getElementById('dt');
 let imageArray = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '6.jpg', '7.jpg']
 let date; 
+let i = 0;
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
 // function date
 function dates(){
     date = new Date;
@@ -27,7 +29,7 @@ if(mins < 10){
     ampm = 'am'
 }
 // concat
-let myTime = hour + ":" + mins + " " + ampm;
+let myTime = hour + ":" + mins + "" + ampm;
 // concat
 let myDate = day +", "  +dates +"/" + month +  "/" + year;
 // display on  html page
@@ -42,14 +44,19 @@ function start (){
 // set interval function
 setInterval(changeImg, 3000);
 
+
+
+// change image
 function changeImg (){
-let i = Math.floor(Math.random() * imageArray.length);
- if(i >= 0 && i <= imageArray.length){
-container.style.backgroundImage = `url(img/${imageArray[i]})`
- } else{
-     let i = 0
-        container.style.backgroundImage = `url(img/${imageArray[i]})`
+ if(i<imageArray.length){
+// let i = Math.floor(Math.random() * imageArray.length);
+     container.setAttribute('src', `img/${imageArray[i]}`)
+i++
  }
+ else{
+     i = 0;
+ }
+
 dates()
 
 
@@ -57,9 +64,6 @@ dates()
 
 
 }
-
-
-
 
 
 window.addEventListener('DOMContentLoaded', start)
