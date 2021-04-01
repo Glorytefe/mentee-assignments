@@ -20,8 +20,8 @@ if(hour>12){
     hour = hour-12;
     ampm = 'pm';
     // adjusting mins display
-if(mins<10){
-    mins = 0 +""+mins
+if(mins < 10){
+    mins = 0 + "" + (mins)
 }
 }else if(hour<12){
     ampm = 'am'
@@ -35,6 +35,7 @@ dateHolder.innerText = myDate;
 timeHolder.innerText = myTime;
 
 }
+
 // start function
 function start (){
 
@@ -58,6 +59,7 @@ dates()
 }
 
 start()
-dates()
 
 
+
+window.addEventListener('DOMContentLoaded', start)
