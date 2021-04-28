@@ -26,14 +26,15 @@
       <!-- container div -->
       <div class="container py-4">
         <div>
-          <h2>BUDGET APP</h2>
+          <h2 class="ap">BUDGET APP</h2>
         </div>
 
-        <!-- row starts -->
+        <!-- row 1 starts -->
         <div class="row">
           <!-- col 1 start -->
           <div class="col-md-5 col-sm-12">
             <!-- CARD 1 STARTS -->
+
             <div class="card pb-3 my-5">
               <small class="text-white p-2 bg-danger" id="noVal"></small>
 
@@ -58,6 +59,39 @@
                 </div>
               </form>
             </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col-md-7 col-sm-12">
+            <!-- row starts -->
+            <div class="row text-center">
+              <!-- budget col -->
+              <div class="col-md-4">
+                <h4 class="py-3">BUDGET</h4>
+                <p><i class="fas fa-wallet fa-3x"></i></p>
+                <h3 class="py-2">&dollar; <span id="budget-hold">0</span></h3>
+              </div>
+              <!-- expenses col -->
+              <div class="col-md-4">
+                <h4 class="py-3">EXPENSES</h4>
+                <p><i class="fas fa-money-bill fa-3x"></i></p>
+                <h3 class="py-2">&dollar; <span id="exp-hold">0</span></h3>
+              </div>
+              <!-- balance col -->
+              <div class="col-md-4" id="bals">
+                <h4 class="py-3">BALANCE</h4>
+                <p><i class="fas fa-coins fa-3x"></i></p>
+                <h3 class="py-2">&dollar; <span id="bal-hold">0</span></h3>
+              </div>
+            </div>
+            <!-- row ends -->
+          </div>
+          <!-- col 2 ends -->
+        </div>
+        <!-- row 1 ends -->
+        <!-- row 2 start -->
+        <div class="row">
+          <!-- col 1 -->
+          <div class="col-md-5 col-sm-12">
             <!-- CARD 2 STARTS -->
             <div class="card py-3 my-3">
               <form action="" class="container" id="expense-form">
@@ -96,31 +130,10 @@
             </div>
             <!-- CARD ENDS -->
           </div>
-          <!-- col 2 start -->
+
+          <!-- col 2 -->
           <div class="col-md-7 col-sm-12">
-            <!-- row starts -->
-            <div class="row text-center">
-              <!-- budget col -->
-              <div class="col-md-4">
-                <h4 class="py-3">BUDGET</h4>
-                <p><i class="fas fa-wallet fa-3x"></i></p>
-                <h3 class="py-2">&dollar; <span id="budget-hold">0</span></h3>
-              </div>
-              <!-- expenses col -->
-              <div class="col-md-4">
-                <h4 class="py-3">EXPENSES</h4>
-                <p><i class="fas fa-money-bill fa-3x"></i></p>
-                <h3 class="py-2">&dollar; <span id="exp-hold">0</span></h3>
-              </div>
-              <!-- balance col -->
-              <div class="col-md-4" id="bals">
-                <h4 class="py-3">BALANCE</h4>
-                <p><i class="fas fa-coins fa-3x"></i></p>
-                <h3 class="py-2">&dollar; <span id="bal-hold">0</span></h3>
-              </div>
-            </div>
-            <!-- row ends -->
-            <!--  -->
+            <!-- table  -->
             <div class="tabled my-5" id="tablea">
               <table class="table table-striped table-responsive-sm">
                 <thead>
@@ -144,8 +157,9 @@
               </table>
             </div>
           </div>
-          <!-- col ends -->
         </div>
+        <!-- row 2 ends -->
+
         <!-- row ends -->
       </div>
     </section>
