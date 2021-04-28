@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+#noVal,
+#tablea,
+#expno {
+  visibility: hidden;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
