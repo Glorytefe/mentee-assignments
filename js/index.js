@@ -90,12 +90,10 @@ getBalance(){
     // get total
        let totalExp = 0
     // parseInt(this.budgetArr[i].expenseValue);
-      for(let i = 0; i < this.budgetArr.length; i++){
           totalExp = this.budgetArr.reduce((a, b)=>{
             a += parseInt(b.expenseValue);
             return a;
           }, 0)
-      };
       this.expHold.textContent = totalExp;
     let bal = parseInt(totalExp);
     let amt = parseInt(this.budgetHold.textContent);
